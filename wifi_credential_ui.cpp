@@ -1,7 +1,7 @@
 /*
  * LVGL user interface program to scan and display Wifi APs, select one, and enter+manage passwords
  */
-#include	"gui_task.h"
+#include	"ui_task.h"
 #include	"lvgl.h"
 #include	"wifi_credential_ui.h"
 
@@ -133,7 +133,7 @@ static void show_wifi_credential_ui(bool show)
 	}
 }
 
-void create_wifi_credential_button(lv_obj* parent)
+void create_wifi_credential_button(lv_obj_t* parent)
 {
 #if 0
 	/*
